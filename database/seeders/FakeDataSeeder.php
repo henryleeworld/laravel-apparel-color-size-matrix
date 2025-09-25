@@ -10,7 +10,10 @@ use Str;
 
 class FakeDataSeeder extends Seeder
 {
-    public function run()
+    /**
+     * Run the database seeders.
+     */
+    public function run(): void
     {
         $sizes = [
             'XS',
