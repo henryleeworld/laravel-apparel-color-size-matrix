@@ -2,23 +2,13 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
+#[Fillable(['product_id', 'color_id', 'size_id', 'reference_number'])]
 class ProductColorSize extends Model
 {
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var list<string>
-     */
-    protected $fillable = [
-        'product_id',
-        'color_id',
-        'size_id',
-        'reference_number'
-    ];
-
     /**
      * Get the product that owns the product color size.
      */

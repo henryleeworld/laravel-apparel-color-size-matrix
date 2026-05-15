@@ -16,7 +16,6 @@ return new class extends Migration
             $table->foreignId('color_id')->constrained()->onDelete('cascade');
             $table->foreignId('size_id')->constrained()->onDelete('cascade');
             $table->string('reference_number');
-
             $table->timestamps();
         });
     }
